@@ -67,17 +67,11 @@ button {
 }
 
 .container {
-  max-width: 1158px;
+  max-width: 320px;
   padding: 0 16px;
   margin-left: auto;
   margin-right: auto;
   width: 100%;
-}
-
-@media (min-width: 320px) {
-  .container {
-    max-width: 320px;
-  }
 }
 
 @media (min-width: 768px) {
@@ -95,6 +89,7 @@ button {
 
 /* ========== PAGE STYLES ========== */
 .page-header .container {
+  position: relative;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -129,7 +124,7 @@ button {
 }
 
 .page-nav-list {
-  display: flex;
+  display: none;
   gap: 40px;
   color: #404bbf;
 }
@@ -178,7 +173,7 @@ button {
 }
 
 .page-address-list {
-  display: flex;
+  display: none;
   gap: 40px;
 }
 
@@ -196,44 +191,38 @@ button {
 }
 
 /* BURGER-MENU */
+.burger-menu {
+  position: absolute;
+  top: 16px;
+  right: 16px;
 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: transparent;
+  border: none;
+}
 
 .burger-menu-img {
 }
 /* /BURGER-MENU */
 
-@media (min-width: 320px) and (max-width: 768px) {
-  .page-address-list {
-    display: none;
-  }
-  .page-nav-list {
-    display: none;
-  }
-
-  .burger-menu {
-    position: absolute;
-    top: 16px;
-    right: 16px;
-    /* left: 280px; */
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    background-color: transparent;
-    border: none;
-  }
-
-}
-
-@media (min-width: 768px) and (max-width: 1158px) {
+@media (min-width: 768px) {
   .burger-menu {
       display: none; }
   
   .page-nav {
     gap: 120px;
   }
+
+  .page-nav-list {
+    display: flex;
+  }
+
   .page-address-list {
+    display: flex;
+
     flex-direction: column;
     gap: 12px;
   }
@@ -245,8 +234,16 @@ button {
 }
 
 @media (min-width: 1158px) {
-  .burger-menu {
-      display: none;
+  .page-address-list {
+      display: flex;
+  
+      flex-direction: row;
+      gap: 40px;
+    }
+
+    .page-address {
+      font-size: 16px;
+      line-height: 1.5;
     }
 }
 /* ========== /PAGE STYLES ========== */
@@ -267,8 +264,8 @@ button {
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
-  padding-top: 188px;
-  padding-bottom: 188px;
+  padding-top: 72px;
+  padding-bottom: 72px;
 }
 
 .hero .container {
@@ -279,13 +276,13 @@ button {
 }
 
 .hero-title {
+  line-height: 1.11;
+    font-size: 36px;
+    max-width: 216px;
   font-weight: 700;
-  font-size: 56px;
-  line-height: 1.07;
   color: #ffffff;
   text-align: center;
   letter-spacing: 0.02em;
-  max-width: 496px;
 }
 
 .hero-button {
@@ -319,19 +316,6 @@ button {
   }  
 }
 
-@media (min-width: 320px) {
-  .hero {
-    padding-top: 72px;
-    padding-bottom: 72px;
-  }
-
-  .hero-title {
-    line-height: 1.11;
-    font-size: 36px;
-    max-width: 216px;
-  }
-}
-
 @media (min-width: 768px) {
   .hero {
     padding-top: 112px;
@@ -350,12 +334,6 @@ button {
     padding-top: 188px;
     padding-bottom: 188px;
   }
-
-  .hero-title {
-    line-height: 1.07;
-    font-size: 56px;
-    max-width: 496px;
-  }
 }
 /* ========== /HERO STYLES ========== */
 
@@ -363,15 +341,22 @@ button {
 .features {
   padding-top: 120px;
   padding-bottom: 120px;
+  /* width: 100%; */
 }
 
 .features-list {
   display: flex;
-  gap: 24px;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 72px;
+}
+
+.features-card {
+  width: 100%;
 }
 
 .features-card-img-container {
-  display: flex;
+  display: none;
   justify-content: center;
   align-items: center;
   background-color: #f4f4fd;
@@ -385,82 +370,68 @@ button {
 }
 
 .features-card-title {
-  font-weight: 500;
-  font-size: 20px;
+  text-align: center;
+  font-weight: 700;
+  font-size: 36px;
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: #2e2f42;
   margin-bottom: 8px;
 }
 
-.features-card {
-  width: calc((100% - 72px) / 4);
-}
-
 .features-text {
+  font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
 }
 
-@media (min-width: 320px) and (max-width: 768px) {
+@media (min-width: 768px) {
   .features-list {
-    flex-direction: column;
-    gap: 72px;
-  }
-
-  .features-card-title {
-    font-weight: 700;
-    font-size: 36px;
-  }
-
-  .features-card-img-container {
-    display: none;
-  }
-
-  .features-card {
-    width: 100%;
-  }
-
-  .features-card-title {
-    text-align: center;
-  }
-}
-
-@media (min-width: 768px) and (max-width: 1158px) {
-  .features-list {
-    flex-wrap: wrap;
+    flex-direction: row;
     column-gap: 24px;
     row-gap: 72px;
+  }
+
+  .features-card-title {
+    text-align: start;
   }
 
     .features-card {
       width: calc((100% - 24px) / 2); 
     }
-
-        .features-card-title {
-          font-weight: 700;
-          font-size: 36px;
-    }
-
-        .features-text {
-          font-weight: 500;  
-        }
-
-  .features-card-img-container {
-    display: none;
-  }
 }
 
 @media (min-width: 1158px) {
+  .features-list {
+    gap: 24px;
+  }
+  
+  .features-card {
+    width: calc((100% - 72px) / 4);
+  }
+
+  .features-card-img-container {
+    display: flex;
+  }
+  
+  .features-card-title {
+      font-weight: 500;
+      font-size: 20px;
+    }
+
+    .features-text {
+      font-weight: 400;
+    }
+
 }
 /* ========== /FEATURES STYLES ========== */
 
 /* ========== TEAM STYLES ========== */
 .team {
   background-color: #f4f4fd;
-  padding-top: 120px;
-  padding-bottom: 120px;
+  padding-top: 96px;
+  padding-bottom: 96px;
 }
 
 .team-title {
@@ -475,12 +446,17 @@ button {
 
 .team-list {
   display: flex;
-  gap: 24px;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 72px;
+  
+  
 }
 
 .team-card {
+  width: 264px;
   background-color: #ffffff;
-  width: calc((100% - 72px) / 4);
   border-radius: 0px 0px 4px 4px;
   box-shadow: 0 1px 6px rgba(46, 47, 66, 0.08), 0 2px 1px rgba(46, 47, 66, 0.08),
     0 1px 1px rgba(46, 47, 66, 0.16);
@@ -518,11 +494,13 @@ button {
 
 .social-list {
   display: flex;
+  justify-content: center;
+  align-items: center;
   gap: 24px;
   width: 232px;
   padding-top: 8px;
-  justify-content: center;
-  align-items: center;
+  padding-left: 16px;
+  padding-right: 16px;
 }
 
 .social-item {
@@ -548,35 +526,36 @@ button {
   fill: #f4f4fd;
 }
 
-@media (min-width: 320px) and (max-width: 768px) {
-  .team-list {
-    flex-direction: column;
-    align-items: center;
-    gap: 72px;
-  }
-  .team-card {
-    background-color: #ffffff;
-    width: 264px;
-  }
-}
+@media (min-width: 768px) {
 
-@media (min-width: 768px) and (max-width: 1158px) {
-  .team .container {
-    padding-left: 108px;
-    padding-right: 108px;
-  }
-  
   .team-list {
-    flex-wrap: wrap;
+    flex-direction: row;
     column-gap: 24px;
     row-gap: 64px;
+
+    padding-left: 92px;
+    padding-right: 92px;
   }
     .team-card {
       width: calc((100% - 24px) / 2);
-     }
+  }
+
 }
 
 @media (min-width: 1158px) {
+  .team {
+      padding-top: 120px;
+      padding-bottom: 120px; }
+
+  .team-list {
+    padding: 0;
+
+    gap: 24px;
+  }
+
+  .team-card {
+    width: calc((100% - 72px) / 4);
+  }
 }
 
 /* ========== /TEAM STYLES ========== */
@@ -588,6 +567,9 @@ button {
 }
 
 .portfolio-list {
+  flex-direction: column;
+  flex-wrap: wrap;
+
   display: flex;
   flex-wrap: wrap;
   column-gap: 24px;
@@ -595,7 +577,7 @@ button {
 }
 
 .portfolio-card {
-  width: calc((100% - 48px) / 3);
+  width: 100%;
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -665,19 +647,9 @@ button {
   color: #434455;
 }
 
-@media (min-width: 320px) and (max-width: 768px) {
+@media (min-width: 768px) {
   .portfolio-list {
-    flex-direction: column;
-  }
-
-  .portfolio-card {
-    width: 100%;
-  }
-}
-
-@media (min-width: 768px) and (max-width: 1158px) {
-  .portfolio-list {
-    flex-wrap: wrap;
+    flex-direction: row;
   }
   .portfolio-card {
     width: calc((100% - 24px) / 2);
@@ -689,29 +661,43 @@ button {
 }
 
 @media (min-width: 1158px) {
+  .portfolio-card {
+    width: calc((100% - 48px) / 3);
+  }
+  .portfolio-card {
+    column-gap: 24px;
+      row-gap: 48px;
+  }
 }
 /* ========== /PORTFOLIO STYLES ========== */
 
 /* ========== FOOTER STYLES ========== */
 .footer {
+  padding-top: 96px;
+  padding-bottom: 96px;
   background-color: #2e2f42;
-  padding: 100px 0;
 }
 
 .footer .container {
   display: flex;
-  flex-direction: row;
-  align-items: baseline;
+  flex-direction: column;
+  align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
 }
 
 .footer-wrap {
   display: flex;
-  gap: 120px;
+  flex-direction: column;
+  align-items: center;
+  gap: 72px;
+  margin-bottom: 72px;
 }
 
 .footer-logo-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .footer-logo {
@@ -734,11 +720,14 @@ button {
   line-height: 1.5;
   color: #f4f4fd;
   letter-spacing: 0.02em;
-  width: 264px;
+  width: 288px;
   height: 72px;
 }
 
 .footer-social-container {
+  display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .footer-social-title {
@@ -783,6 +772,9 @@ button {
 }
 
 .footer-subscribe {
+  display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .footer-subscribe-title {
@@ -796,6 +788,7 @@ button {
 
 .footer-subscribe-form {
   display: flex;
+  flex-direction: column;
   gap: 24px;
 }
 
@@ -803,7 +796,7 @@ button {
 }
 
 .footer-subscribe-input {
-  width: 264px;
+  width: 288px;
   height: 40px;
   border: 1px solid #ffffff;
   background-color: transparent;
@@ -847,64 +840,62 @@ button {
   margin-left: 16px;
 }
 
-@media (min-width: 320px) and (max-width: 768px) {
+@media (min-width: 768px) {
   .footer .container {
-    flex-direction: column;
-    align-items: center;
-    min-width: 320px;
-    padding: 96px 16px;
-  }
-
-  .footer-logo-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .footer-wrap {
-    flex-direction: column;
-    align-items: center;
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: start;
     gap: 72px;
-    margin-bottom: 72px;
-  }
-
-    .footer-text {
-      width: 288px;
+    padding-left: 108px;
     }
 
-  .footer-social-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .footer-subscribe {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-    .footer-subscribe-input {
-      width: 288px;
+    .footer {
     }
 
-  .footer-subscribe-form {
-    flex-direction: column;
-  }
-}
-
-@media (min-width: 768px) and (max-width: 1158px) {
-    .footer .container {
-      gap: 72px;
-      padding-left: 108px;
-      padding-right: 164px;
-    }
     .footer-wrap {
+      align-items: start;
+      flex-direction: row;
       gap: 24px;
     }
+
+    .footer-logo-container {
+          display: block;
+        }
+
+        .footer-text {
+          width: 264px;
+        }
+
+        .footer-social-container {
+          display: block;
+        }
+        .footer-subscribe {
+          display: block;
+        }
+        .footer-subscribe-input {
+          width: 264px;
+        }
+          .footer-subscribe-form {
+            flex-direction: row;
+  }     
 }
 
 @media (min-width: 1158px) {
+  .footer .container {
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    padding-left: 0;
+  }
+  
+  .footer {
+    padding-top: 96px;
+    padding-bottom: 96px;
+  }
+
+  .footer-wrap {
+    gap: 120px;
+  }
 }
 /* ========== /FOOTER STYLES ========== */
 
@@ -934,9 +925,9 @@ button {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 408px;
+  width: 288px;
   min-height: 584px;
-  padding: 72px 24px 24px 24px;
+  padding: 72px 16px 24px 16px;
   background-color: #fcfcfc;
   border-radius: 4px;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
@@ -1066,16 +1057,12 @@ button {
 
 .modal-agreement {
   display: flex;
-  font-size: 12px;
-  line-height: 1.17;
-  letter-spacing: 0.04em;
-  color: #8e8f99;
 }
 
 .custom-checkbox {
   position: absolute;
-  left: 24px;
-  bottom: 104px;
+  left: 16px;
+  bottom: 111px;
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -1102,6 +1089,10 @@ button {
 
 .modal-agreement-wrap {
   margin-left: 24px;
+  font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.04em;
+    color: #8e8f99;
 }
 
 .modal-button-send {
@@ -1128,15 +1119,15 @@ button {
   background-color: #404bbf;
 }
 
-@media (min-width: 320px) and (max-width: 768px) {
+@media (min-width: 768px) {
   .modal {
-    width: 288px;
-    padding: 72px 16px 24px 16px;
+    width: 408px;
+    padding: 72px 24px 24px 24px;
   }
 
     .custom-checkbox {
-      left: 16px;
-      bottom: 111px;
+      left: 24px;
+      bottom: 104px;
     }
 }
 
