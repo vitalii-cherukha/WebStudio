@@ -935,7 +935,7 @@ button {
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-button-backdrop {
+.modal-button-exit {
   position: absolute;
   top: 24px;
   right: 24px;
@@ -952,18 +952,18 @@ button {
     border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-button-backdrop:focus,
-.modal-button-backdrop:hover {
+.modal-button-exit:focus,
+.modal-button-exit:hover {
   background-color: #404bbf;
   border: none;
 }
 
-.button-backdrop-icon {
+.button-exit-icon {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-button-backdrop:focus .button-backdrop-icon,
-.modal-button-backdrop:hover .button-backdrop-icon {
+.modal-button-exit:focus .button-exit-icon,
+.modal-button-exit:hover .button-exit-icon {
   fill: #ffffff;
 }
 
@@ -1099,7 +1099,6 @@ button {
   position: relative;
   left: 50%;
   transform: translateX(-50%);
-
   display: block;
   min-width: 169px;
   height: 56px;
