@@ -376,7 +376,6 @@ button {
 .features {
   padding-top: 120px;
   padding-bottom: 120px;
-  /* width: 100%; */
 }
 
 .features-list {
@@ -388,6 +387,17 @@ button {
 
 .features-card {
   width: 100%;
+}
+
+.features-card-img-container {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  background-color: #f4f4fd;
+  border: 1px solid #8e8f99;
+  border-radius: 4px;
+  height: 112px;
+  margin-bottom: 8px;
 }
 
 .features-card-title {
