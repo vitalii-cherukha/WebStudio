@@ -120,7 +120,6 @@ button {
 .page-nav {
   display: flex;
   align-items: center;
-  gap: 76px;
 }
 
 .page-nav-list {
@@ -237,6 +236,10 @@ button {
 
     flex-direction: row;
     gap: 40px;
+  }
+
+  .page-nav {
+    gap: 76px;
   }
 
   .page-address {
