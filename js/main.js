@@ -9,8 +9,15 @@ const onModalIsOpenClick = e => {
 };
 
 const onModalIsHideClick = e => {
+  if (e.target === e.currentTarget) {
+    refs.modalOvarlay.classList.remove('is-open');
+  }
+};
+
+const onModalIsHideBtnClick = e => {
   refs.modalOvarlay.classList.remove('is-open');
 };
 
 refs.openModal.addEventListener('click', onModalIsOpenClick);
-refs.backBtn.addEventListener('click', onModalIsHideClick);
+refs.backBtn.addEventListener('click', onModalIsHideBtnClick);
+refs.modalOvarlay.addEventListener('click', onModalIsHideClick);
