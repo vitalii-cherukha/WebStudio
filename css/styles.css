@@ -7,6 +7,7 @@ body {
   color: #434455;
   background-color: #ffffff;
   margin: 0;
+  scroll-behavior: smooth;
 }
 
 img {
