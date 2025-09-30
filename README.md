@@ -32,10 +32,17 @@ CSS3 — Flexbox, Grid, responsive media queries.
 
 JavaScript (Vanilla) — modal logic, form handling, and interactions.
 
-📂 Project Structure
+## 📂 Project Structure
 
-WebStudio/ │── index.html # Main page │── css/ │ └── styles.css # Styles │── js/
-│ └── script.js # Interactivity (modal, form, etc.) │── images/ # Assets
+```plaintext
+WebStudio/
+│── index.html        # Main page
+│── css/
+│   └── styles.css    # Styles
+│── js/
+│   └── script.js     # Interactivity (modal, form, etc.)
+│── images/           # Assets
+
 
 🚀 Getting Started
 
@@ -57,3 +64,4 @@ Animate modal and navigation transitions.
 Connect contact form to a backend (e.g., Node.js / Firebase).
 
 👉 Made with ❤️ by Vitalii Cherukha
+```
