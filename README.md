@@ -32,9 +32,10 @@ CSS3 — Flexbox, Grid, responsive media queries.
 
 JavaScript (Vanilla) — modal logic, form handling, and interactions.
 
-📂 Project Structure WebStudio/ │── index.html # Main page │── css/ │ └──
-styles.css # Styles │── js/ │ └── script.js # Interactivity (modal, form, etc.)
-│── images/ # Images & assets
+📂 Project Structure
+
+WebStudio/ │── index.html # Main page │── css/ │ └── styles.css # Styles │── js/
+│ └── script.js # Interactivity (modal, form, etc.) │── images/ # Assets
 
 🚀 Getting Started
 
