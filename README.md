@@ -35,15 +35,10 @@ JavaScript (Vanilla) — modal logic, form handling, and interactions.
 WebStudio/
 
 │── index.html        # Main page
-
 │── css/
-
 │   └── styles.css    # Styles
-
 │── js/
-
 │   └── script.js     # Interactivity (modal, form, etc.)
-
 │── images/           # Images & assets
 
 🚀 Getting Started
