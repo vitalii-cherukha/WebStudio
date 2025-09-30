@@ -1,4 +1,4 @@
-# 🌐 WebStudio
+#🌐 WebStudio
 
 A simple and functional **landing page** built with **HTML**, **CSS**, and a bit
 of **JavaScript**.  
@@ -40,7 +40,4 @@ JavaScript (Vanilla) – interactivity (modal, form handling)
 📧 Contact
 Created by Vitalii Cherukha
 Feel free to ⭐ the repo if you like it!
-
-markdown
-Копіювати код
 ```
