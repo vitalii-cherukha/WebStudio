@@ -1,36 +1,21 @@
-🌐 WebStudio — Business Website
+# 🌐 WebStudio
 
-A responsive and modern business website built with HTML5, CSS3, and Vanilla
-JavaScript. This project is part of my learning journey and demonstrates clean
-markup, adaptive layouts, and simple interactivity without frameworks.
+A simple and functional **landing page** built with **HTML**, **CSS**, and a bit
+of **JavaScript**.  
+The project demonstrates responsive layout, reusable components, and basic
+interactivity (modal windows, forms).
 
-🔗 Live Demo: WebStudio
+---
 
-🔗 Repository: github.com/vitalii-cherukha/WebStudio
+## ✨ Features
 
-✨ Features
+- 📱 **Responsive Design** – adapts for mobile, tablet, and desktop
+- 🎨 **Modern UI** – clean layout with reusable CSS styles
+- 🧩 **Components** – header, hero, features, team, portfolio, footer
+- 📩 **Modal Form** – contact form with validation (JS)
+- ⚡ **Lightweight** – no frameworks, only pure HTML/CSS/JS
 
-Responsive design — works smoothly on mobile, tablet, and desktop.
-
-Hero section — eye-catching introduction with a CTA button.
-
-Features section — overview of services with clean icons.
-
-Team section — cards with team members and social media links.
-
-Portfolio gallery — project showcase with categories.
-
-Modal contact form — interactive form with basic validation in JavaScript.
-
-Footer — contact info, subscription field, and social links.
-
-🛠️ Tech Stack
-
-HTML5 — semantic and accessible markup.
-
-CSS3 — Flexbox, Grid, responsive media queries.
-
-JavaScript (Vanilla) — modal logic, form handling, and interactions.
+---
 
 ## 📂 Project Structure
 
@@ -42,26 +27,20 @@ WebStudio/
 │── js/
 │   └── script.js     # Interactivity (modal, form, etc.)
 │── images/           # Assets
+🚀 Live Demo
+👉 View on GitHub Pages
 
+🛠️ Tech Stack
+HTML5 – semantic structure
 
-🚀 Getting Started
+CSS3 – layout & styles (Flexbox, Grid, Responsive)
 
-Clone the repository:
+JavaScript (Vanilla) – interactivity (modal, form handling)
 
-git clone https://github.com/vitalii-cherukha/WebStudio.git
+📧 Contact
+Created by Vitalii Cherukha
+Feel free to ⭐ the repo if you like it!
 
-Open index.html in your browser. ✅ That’s it — no build tools or frameworks
-required.
-
-📸 Screenshots
-
-🔮 Future Improvements
-
-Add filtering in the portfolio section.
-
-Animate modal and navigation transitions.
-
-Connect contact form to a backend (e.g., Node.js / Firebase).
-
-👉 Made with ❤️ by Vitalii Cherukha
+markdown
+Копіювати код
 ```
