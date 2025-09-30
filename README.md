@@ -1,4 +1,4 @@
-#🌐 WebStudio
+🌐 WebStudio
 
 A simple and functional **landing page** built with **HTML**, **CSS**, and a bit
 of **JavaScript**.  
@@ -7,7 +7,7 @@ interactivity (modal windows, forms).
 
 ---
 
-## ✨ Features
+✨ Features
 
 - 📱 **Responsive Design** – adapts for mobile, tablet, and desktop
 - 🎨 **Modern UI** – clean layout with reusable CSS styles
@@ -17,9 +17,9 @@ interactivity (modal windows, forms).
 
 ---
 
-## 📂 Project Structure
+📂 Project Structure
 
-```plaintext
+```
 WebStudio/
 │── index.html        # Main page
 │── css/
@@ -27,17 +27,18 @@ WebStudio/
 │── js/
 │   └── script.js     # Interactivity (modal, form, etc.)
 │── images/           # Assets
+```
 🚀 Live Demo
 👉 View on GitHub Pages
 
 🛠️ Tech Stack
 HTML5 – semantic structure
 
-CSS3 – layout & styles (Flexbox, Grid, Responsive)
+CSS3 – layout & styles (Flexbox, Responsive)
 
 JavaScript (Vanilla) – interactivity (modal, form handling)
 
 📧 Contact
 Created by Vitalii Cherukha
 Feel free to ⭐ the repo if you like it!
-```
+
