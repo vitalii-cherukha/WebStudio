@@ -1,7 +1,8 @@
 🌐 WebStudio — Business Website
 
-A responsive and modern business website built with HTML5, CSS3, and Vanilla JavaScript.
-This project is part of my learning journey and demonstrates clean markup, adaptive layouts, and simple interactivity without frameworks.
+A responsive and modern business website built with HTML5, CSS3, and Vanilla
+JavaScript. This project is part of my learning journey and demonstrates clean
+markup, adaptive layouts, and simple interactivity without frameworks.
 
 🔗 Live Demo: WebStudio
 
@@ -31,15 +32,9 @@ CSS3 — Flexbox, Grid, responsive media queries.
 
 JavaScript (Vanilla) — modal logic, form handling, and interactions.
 
-📂 Project Structure
-WebStudio/
-
-│── index.html        # Main page
-│── css/
-│   └── styles.css    # Styles
-│── js/
-│   └── script.js     # Interactivity (modal, form, etc.)
-│── images/           # Images & assets
+📂 Project Structure WebStudio/ │── index.html # Main page │── css/ │ └──
+styles.css # Styles │── js/ │ └── script.js # Interactivity (modal, form, etc.)
+│── images/ # Images & assets
 
 🚀 Getting Started
 
@@ -47,9 +42,10 @@ Clone the repository:
 
 git clone https://github.com/vitalii-cherukha/WebStudio.git
 
+Open index.html in your browser. ✅ That’s it — no build tools or frameworks
+required.
 
-Open index.html in your browser.
-✅ That’s it — no build tools or frameworks required.
+📸 Screenshots
 
 🔮 Future Improvements
 
